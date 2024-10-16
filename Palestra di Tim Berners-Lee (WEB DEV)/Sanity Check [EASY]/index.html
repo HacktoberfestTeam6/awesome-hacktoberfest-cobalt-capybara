@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Choose a Pokemon!</title>
+
+</head>
+<body class="h-screen flex flex-col justify-around">
+    <main class="flex flex-col gap-10">
+        <header class="flex flex-col justify-center gap-10">
+            <h1 class="text-3xl pt-10 pb-10 text-center">Choose your starter Pokemon!</h1>
+            <div class="flex gap-5 h-full justify-around">
+                <img 
+                    src="./squirtle.png" 
+                    width="200" 
+                    height="200" 
+                    class="object-contain cursor-pointer hover:transition-shadow" alt="Squirtle" onclick="selectPokemon(this)">
+                <img 
+                    src="./bulbasaur.png" 
+                    width="200" 
+                    height="200" 
+                    class="object-contain cursor-pointer hover:transition-shadow" alt="Bulbasaur" onclick="selectPokemon(this)">
+                <img 
+                    src="./charmander.png" 
+                    width="200" 
+                    height="200" 
+                    class="object-contain cursor-pointer hover:transition-shadow" alt="Charmander" onclick="selectPokemon(this)">
+            </div>
+        </header>
+        <h2 id="selected-pokemon" class="text-lg text-center"></h2>
+    </main>
+
+    <button onclick="sayHello()">Submit</button>
+
+    <h4></h4>
+
+    <script src="script.js"></script>
+</body>
+</html>

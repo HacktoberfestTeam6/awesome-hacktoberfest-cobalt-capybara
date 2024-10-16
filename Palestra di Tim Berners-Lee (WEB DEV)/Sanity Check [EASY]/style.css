@@ -1,0 +1,60 @@
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+.pokemon-container {
+    display: flex;
+    gap: 20px;
+}
+.pokemon-container img {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+
+.full-height {
+    height: 100vh;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.gap-10 {
+    gap: 2.5rem; /* 10 * 0.25rem */
+}
+.text-3xl {
+    font-size: 1.875rem; /* 3 * 0.625rem */
+}
+.pt-10 {
+    padding-top: 2.5rem; /* 10 * 0.25rem */
+}
+.pb-10 {
+    padding-bottom: 2.5rem; /* 10 * 0.25rem */
+}
+.text-center {
+    text-align: center;
+}
+.gap-5 {
+    gap: 1.25rem; /* 5 * 0.25rem */
+}
+.h-full {
+    height: 100%;
+}
+.object-contain {
+    object-fit: contain;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.hover-transition-shadow:hover {
+    transition: box-shadow 0.3s ease;
+}
+.text-lg {
+    font-size: 1.125rem; /* 1.125 * 1rem */
+}
